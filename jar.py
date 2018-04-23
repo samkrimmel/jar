@@ -4,20 +4,21 @@
 
 from random import randint
 
-N = int(input('Number of marbles, between 8 and 20: '))
-w = int(input('Prize if correct guess, between 3 and 15: '))
+
+N = 8 #int(input('Number of marbles, between 8 and 20: '))
+W = 3 #int(input('Prize if correct guess, between 3 and 15: '))
 
 Red = randint(0,N)
 Green = N-Red
 
-PR = Red/N
-PG = Green/N
+Pr = Red/N
+Pg = Green/N
 
-D = (-1*W*(PR))/(-1*(PG))
+D = (-1*W*(Pr))/(-1*(Pg))
 
-print(Red)
-print(Green)
-print(PR)
-print(PG)
-print(D)
+print('Red:',Red)
+print('Green:',Green)
+print('PR:',Pr)
+print('PG:',Pg)
+print('Price:',D)
 
