@@ -8,7 +8,10 @@ from random import randint
 N = 8 #int(input('Number of marbles, between 8 and 20: '))
 W = 3 #int(input('Prize if correct guess, between 3 and 15: '))
 runs = 300000
+
 total = 0
+
+#EXPERIMENTAL
 
 for num in range(0,runs):
     
@@ -26,11 +29,27 @@ for num in range(0,runs):
     
 avg = total/runs
 
+#THEORETICAL
+
+Ttotal = 0
+
+for i in range(0,N):
+    TRed = N - i
+    TGreen = N - TRed
+    TPr = TRed/N
+    TPg = TGreen/N
+    
+    Ttotal += W*TPr
+
+Tavg = Ttotal/(N+1)
 
 print('Red:',Red)
 print('Green:',Green)
 print('PR:',Pr)
 print('PG:',Pg)
 print('Price:',D)
-print('Avg: ',avg)
+print('Experimental Average Price:',avg)
+print('Theoretical Average Price:',Tavg)
+
+
 
