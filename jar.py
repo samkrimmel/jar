@@ -8,21 +8,21 @@ from random import randint
 N = 8 #int(input('Number of marbles, between 8 and 20: '))
 W = 3 #int(input('Prize if correct guess, between 3 and 15: '))
 runs = 10
-
-
-Red = randint(0,N)
-Green = N-Red
-
-Pr = Red/N
-Pg = Green/N
+total = 0
 
 for num in range(0,runs):
+    
+    Red = randint(0,N)
+    Green = N-Red
+    
+    Pr = Red/N
+    Pg = Green/N
+    
     if Pg == 0:
         D = W
     else:
         D = (W*Pr)
     total += D
-    num += 1
     
 avg = total/runs
 
