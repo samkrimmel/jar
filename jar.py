@@ -5,9 +5,9 @@
 from random import randint
 
 
-N = 8 #int(input('Number of marbles, between 8 and 20: '))
-W = 3 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 300000
+N = 10 #int(input('Number of marbles, between 8 and 20: '))
+W = 4 #int(input('Prize if correct guess, between 3 and 15: '))
+runs = 100000
 
 total = 0
 
