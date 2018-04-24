@@ -5,8 +5,8 @@
 from random import randint
 
 
-N = 10 #int(input('Number of marbles, between 8 and 20: '))
-W = 4 #int(input('Prize if correct guess, between 3 and 15: '))
+N = 19 #int(input('Number of marbles, between 8 and 20: '))
+W = 7 #int(input('Prize if correct guess, between 3 and 15: '))
 runs = 100000
 
 total = 0
@@ -43,13 +43,8 @@ for i in range(0,N):
 
 Tavg = Ttotal/(N+1)
 
-print('Red:',Red)
-print('Green:',Green)
-print('PR:',Pr)
-print('PG:',Pg)
-print('Price:',D)
-print('Experimental Average Price:',avg)
-print('Theoretical Average Price:',Tavg)
+print('Experimental Average Price ($D):',avg)
+print('Theoretical Average Price ($D):',Tavg)
 
 
 
