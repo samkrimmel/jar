@@ -46,5 +46,12 @@ Tavg = Ttotal/(N+1)
 print('Experimental Average Price ($D):',avg)
 print('Theoretical Average Price ($D):',Tavg)
 
+#STRATEGY 3:
 
+Pw = (Pr**2) + (Pg**2)
+Pl = 1 - Pw
+
+P = ((Pw*W)-(Pw*D)-(Pl*D))/(Pw+Pl)
+
+print(P)
 
