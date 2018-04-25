@@ -32,6 +32,8 @@ avg = total/runs
 #THEORETICAL
 
 Ttotal = 0
+TPrTotal = 0
+TPrTotal = 0
 
 for i in range(0,N):
     TRed = N - i
