@@ -40,7 +40,11 @@ for i in range(0,N):
     TPg = TGreen/N
     
     Ttotal += W*TPr
-
+    TPrTotal += TPr
+    TPgTotal += TPg
+    
+TPrAvg = TPrTotal/(N+1)
+TPgAvg = TPgTotal/(N+1)
 Tavg = Ttotal/(N+1)
 
 print('Experimental Average Price ($D):',avg)
@@ -48,8 +52,12 @@ print('Theoretical Average Price ($D):',Tavg)
 
 #STRATEGY 3:
 
-Pw = (TPr**2) + (TPg**2)
+Pw = (TPrAvg**2) + (TPgAvg**2)
 Pl = 1 - Pw
+
+print(TPr)
+print(TPg)
+print(Pw)
 
 P = (Pw*W)-Tavg
 
