@@ -38,8 +38,8 @@ TPgTotal = 0
 for i in range(0,N):
     TRed = N - i
     TGreen = N - TRed
-    TPr = TRed
-    TPg = TGreen
+    TPr = TRed/N
+    TPg = TGreen/N
     
     Ttotal += W*TPr
     TPrTotal += TPr
