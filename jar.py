@@ -28,12 +28,11 @@ for num in range(0,runs):
     total += D
     
 avg = total/runs
+PwTotal = 0
 
 #THEORETICAL
 
 Ttotal = 0
-TPrTotal = 0
-TPgTotal = 0
 
 for i in range(0,N):
     TRed = N - i
@@ -42,11 +41,9 @@ for i in range(0,N):
     TPg = TGreen/N
     
     Ttotal += W*TPr
-    TPrTotal += TPr
-    TPgTotal += TPg
+    PwTotal += (TPr**2) + (TPg**2)
     
-TPrAvg = TPrTotal/(N+1)
-TPgAvg = TPgTotal/(N+1)
+PwAvg = PwTotal/(N+1)
 Tavg = Ttotal/(N+1)
 
 print('Experimental Average Price ($D):',avg)
@@ -54,14 +51,9 @@ print('Theoretical Average Price ($D):',Tavg)
 
 #STRATEGY 3:
 
-Pw = (TPrAvg**2) + (TPgAvg**2)
-Pl = 1 - Pw
+PlAvg = 1 - PwAvg
 
-print(TPrAvg)
-print(TPgAvg)
-print(Pw)
-
-P = (Pw*W)-Tavg
+P = (PwAvg*W)-Tavg
 
 print(P)
 
