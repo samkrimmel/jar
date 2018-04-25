@@ -38,8 +38,8 @@ TPgTotal = 0
 for i in range(0,N):
     TRed = N - i
     TGreen = N - TRed
-    TPr = TRed/N
-    TPg = TGreen/N
+    TPr = TRed
+    TPg = TGreen
     
     Ttotal += W*TPr
     TPrTotal += TPr
@@ -57,8 +57,8 @@ print('Theoretical Average Price ($D):',Tavg)
 Pw = (TPrAvg**2) + (TPgAvg**2)
 Pl = 1 - Pw
 
-print(TPr)
-print(TPg)
+print(TPrAvg)
+print(TPgAvg)
 print(Pw)
 
 P = (Pw*W)-Tavg
