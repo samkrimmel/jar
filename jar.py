@@ -54,6 +54,6 @@ print('Theoretical Average Price ($D):',Tavg)
 PlAvg = 1 - PwAvg
 
 P = (PwAvg*W)-Tavg
-
+print(PwAvg)
 print(P)
 
