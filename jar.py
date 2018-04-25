@@ -48,7 +48,7 @@ print('Theoretical Average Price ($D):',Tavg)
 
 #STRATEGY 3:
 
-Pw = (Pr**2) + (Pg**2)
+Pw = (TPr**2) + (TPg**2)
 Pl = 1 - Pw
 
 P = (Pw*W)-D
