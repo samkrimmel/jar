@@ -51,7 +51,7 @@ print('Theoretical Average Price ($D):',Tavg)
 Pw = (TPr**2) + (TPg**2)
 Pl = 1 - Pw
 
-P = (Pw*W)-D
+P = (Pw*W)-Tavg
 
 print(P)
 
