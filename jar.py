@@ -7,7 +7,7 @@ from random import randint
 
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 100000
+runs = 10000
 
 total = 0
 
@@ -33,7 +33,7 @@ avg = total/runs
 
 Ttotal = 0
 TPrTotal = 0
-TPrTotal = 0
+TPgTotal = 0
 
 for i in range(0,N):
     TRed = N - i
