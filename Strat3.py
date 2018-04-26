@@ -33,3 +33,23 @@ EPw = EtotalWins/EtotalRuns
 print(EtotalWins)
 print(EtotalRuns)
 print(EPw)
+
+#THEORETICAL
+
+#THEORETICAL
+
+TtotalProb = 0
+
+for i in range(0,N):
+    
+    TRed = N - i
+    TGreen = N - TRed
+    
+    TPr = TRed/N
+    TPg = TGreen/N
+    
+    TtotalProb += ((TPr**2) + (TPg**2))
+    
+    
+    
+    
