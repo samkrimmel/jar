@@ -17,19 +17,19 @@ total = 0
 
 for num in range(0,runs):
     
-    Red = randint(0,N)
-    Green = N-Red
+    ERed = randint(0,N)
+    EGreen = N-ERed
     
-    Pr = Red/N
-    Pg = Green/N
+    EPr = ERed/N
+    EPg = EGreen/N
     
-    if Pg == 0:
-        D = W
+    if EPg == 0:
+        ED = W
     else:
-        D = (W*Pr)
-    total += D
+        ED = (W*Pr)
+    Etotal += ED
     
-Davg = total/runs
+EDavg = Etotal/runs
 PwTotal = 0
 
 #THEORETICAL
@@ -37,18 +37,23 @@ PwTotal = 0
 Ttotal = 0
 
 for i in range(0,N):
+    
     TRed = N - i
     TGreen = N - TRed
+    
     TPr = TRed/N
     TPg = TGreen/N
     
     Ttotal += W*TPr
-    PwTotal += (TPr**2) + (TPg**2)
     
-PwAvg = PwTotal/(N+1)
+    PwTotal += (TPr**2) + (TPg**2)
+
 TDavg = Ttotal/(N+1)
 
-print('Experimental Average Price ($D):',Davg)
+PwAvg = PwTotal/(N+1)
+
+
+print('Experimental Average Price ($D):',EDavg)
 print('Theoretical Average Price ($D):',TDavg)
 
 #STRATEGY 3:
