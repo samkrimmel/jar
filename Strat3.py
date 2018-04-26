@@ -36,8 +36,6 @@ print(EPw)
 
 #THEORETICAL
 
-#THEORETICAL
-
 TtotalProb = 0
 
 for i in range(0,N):
@@ -50,7 +48,7 @@ for i in range(0,N):
     
     TtotalProb += ((TPr**2) + (TPg**2))
     
-TPw = TtotalProb/(N+1)
+TPw = TtotalProb/(N)
 
 print(TPw)
     
