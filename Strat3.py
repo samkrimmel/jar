@@ -30,9 +30,7 @@ for i in range(0,runs):
 
 EPw = EtotalWins/EtotalRuns
 
-print(EtotalWins)
-print(EtotalRuns)
-print(EPw)
+print('Experimental Probability:", EPw)
 
 #THEORETICAL
 
@@ -47,9 +45,8 @@ for i in range(0,N):
     TPg = TGreen/N
     
     TtotalProb += ((TPr**2) + (TPg**2))
-print(TtotalProb)
 
 TPw = TtotalProb/(N+1)
 
-print(TPw)
+print("Theoretical Probability:", Pw)
     
