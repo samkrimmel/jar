@@ -48,7 +48,7 @@ for i in range(0,N):
     
     TtotalProb += ((TPr**2) + (TPg**2))
     
-TPw = TtotalProb/(N+1)
+TPw = TtotalProb/(N-1)
 
 print(TPw)
     
