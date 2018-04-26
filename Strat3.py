@@ -24,7 +24,7 @@ for i in range(0,runs):
     EMarble = randint(1,N)
     EMarble2 = randint(1,N)
     
-    if EMarble = EMarble2:
+    if EMarble == EMarble2:
         EtotalWins += 1
         EtotalRuns += 1
 
