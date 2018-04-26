@@ -34,6 +34,7 @@ print("Experimental Probability:", EPw)
 
 #THEORETICAL
 
+Ttotal = 0
 TtotalProb = 0
 
 for i in range(0,N+1):
