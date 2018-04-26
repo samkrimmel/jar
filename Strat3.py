@@ -36,7 +36,7 @@ print("Experimental Probability:", EPw)
 
 TtotalProb = 0
 
-for i in range(1,N):
+for i in range(0,N):
     
     TRed = N - i
     TGreen = N - TRed
