@@ -24,7 +24,7 @@ for i in range(0,runs):
     EMarble = randint(1,N)
     EMarble2 = randint(1,N)
     
-    if EMarble == EMarble2:
+    if (EMarble <= ERed and EMarble2 <= ERed) or (EMarble > ERed and EMarble2 > ERed):
         EtotalWins += 1
     EtotalRuns += 1
 
@@ -48,7 +48,7 @@ for i in range(0,N):
     
     TtotalProb += ((TPr**2) + (TPg**2))
     
-TPw = TtotalProb/(N)
+TPw = TtotalProb/(N+1)
 
 print(TPw)
     
