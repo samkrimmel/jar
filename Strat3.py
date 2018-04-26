@@ -26,7 +26,7 @@ for i in range(0,runs):
     
     if EMarble == EMarble2:
         EtotalWins += 1
-        EtotalRuns += 1
+    EtotalRuns += 1
 
 EPw = EtotalWins/EtotalRuns
 
