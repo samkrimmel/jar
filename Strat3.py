@@ -48,5 +48,5 @@ for i in range(0,N):
 
 TPw = TtotalProb/(N+1)
 
-print("Theoretical Probability:", Pw)
+print("Theoretical Probability:", TPw)
     
