@@ -28,7 +28,7 @@ for i in range(0,runs):
     
     if (EMarble <= ERed and EMarble2 <= ERed and EMarble3 <=ERed) or (EMarble > ERed and EMarble2 > ERed and EMarble3 > ERed):
         EtotalWins += 1
-    elif (EMarble <= ERed and EMarble2 > ERed and EMarble3 <= ERed and EMarble4 <=ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed and EMarble4 > ERed):
+    elif (EMarble <= ERed and EMarble2 > ERed and EMarble3 <= ERed and EMarble4 <=ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed and EMarble4 > ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 <= ERed and EMarble4 <= ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed and EMarble4 > ERed):
         EtotalWins += 1
     EtotalRuns += 1
 
