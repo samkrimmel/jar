@@ -6,7 +6,7 @@ from random import randint
 
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 10000
+runs = 100000
 
 #EXPERIMENTAL
 
@@ -24,7 +24,6 @@ for i in range(0,runs):
     EMarble = randint(1,N)
     EMarble2 = randint(1,N)
     EMarble3 = randint(1,N)
-    EMarble4 = randint(1,N)
     
     if (EMarble <= ERed and EMarble2 <= ERed and EMarble3 <=ERed) or (EMarble > ERed and EMarble2 > ERed and EMarble3 > ERed):
         EtotalWins += 1
