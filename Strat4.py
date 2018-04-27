@@ -31,7 +31,7 @@ for i in range(0,runs):
         EMarble4 = randint(1,N)
         if EMarble4 <= ERed:
             EtotalWins += 1
-    elif (EMarble <= ERed and EMarble2 > ERed and EMarble3 > ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed)
+    elif (EMarble <= ERed and EMarble2 > ERed and EMarble3 > ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed):
         EMarble4 = randint(1,N)
         if EMarble4 > ERed:
             EtotalWins += 1
