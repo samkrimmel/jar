@@ -26,9 +26,7 @@ for i in range(0,runs):
     EMarble3 = randint(1,N)
     EMarble4 = randint(1,N)
     
-    if (EMarble <= ERed and EMarble2 <= ERed and EMarble3 <=ERed) or (EMarble > ERed and EMarble2 > ERed and EMarble3 > ERed):
-        EtotalWins += 1
-    elif (EMarble <= ERed and EMarble2 > ERed and EMarble3 <= ERed and EMarble4 <=ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed and EMarble4 > ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 <= ERed and EMarble4 <= ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed and EMarble4 > ERed):
+    if (EMarble <= ERed and EMarble2 <= ERed and EMarble3 <=ERed) or (EMarble > ERed and EMarble2 > ERed and EMarble3 > ERed) or (EMarble <= ERed and EMarble2 > ERed and EMarble3 <= ERed and EMarble4 <=ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed and EMarble4 > ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 <= ERed and EMarble4 <= ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed and EMarble4 > ERed):
         EtotalWins += 1
     EtotalRuns += 1
 
