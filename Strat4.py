@@ -64,6 +64,6 @@ TPw = TtotalProb/(N+1)
 
 print("Theoretical Probability:", TPw)
 
-P = (TPw*W)-TDavg
+R = (TPw*W)-TDavg
 
 print("P: ",P)
