@@ -66,4 +66,4 @@ print("Theoretical Probability:", TPw)
 
 R = (TPw*W)-TDavg
 
-print("P: ",P)
+print("R: ",R)
