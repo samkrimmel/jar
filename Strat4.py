@@ -54,10 +54,9 @@ for i in range(0,N+1):
     TPr = TRed/N
     TPg = TGreen/N
     
-    Ttotal += W*TPr
+    Ttotal += (TPr**3)+(TPg**3)+(TPg*(TPr**3))+(TPr*(TPg**3))
     
-    TtotalProb += ((TPr**2) + (TPg**2))
-
+    
 TDavg = Ttotal/(N+1)
 
 TPw = TtotalProb/(N+1)
