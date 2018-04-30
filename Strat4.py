@@ -55,11 +55,10 @@ for i in range(0,N+1):
     TPg = TGreen/N
     
     Ttotal += (TPr**3)+(TPg**3)+(TPg*(TPr**3))+(TPr*(TPg**3))
-    
-    
+
 TDavg = Ttotal/(N+1)
 
-TPw = TtotalProb/(N+1)
+TPw = Ttotal/(N+1)
 
 print("Theoretical Probability:", TPw)
 
