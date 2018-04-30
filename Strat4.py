@@ -54,7 +54,7 @@ for i in range(0,N+1):
     TPr = TRed/N
     TPg = TGreen/N
     
-    Ttotal += (TPr**3)+(TPg**3)+(TPg*(TPr**3))+(TPr*(TPg**3))
+    Ttotal += (TPr**3)+(TPg**3)+(2*(TPg*(TPr**3)))+(2*(TPr*(TPg**3)))
 
 TDavg = Ttotal/(N+1)
 
