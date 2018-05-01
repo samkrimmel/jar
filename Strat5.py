@@ -14,20 +14,10 @@ EtotalWins = 0
 EtotalRuns = 0
 
 #for i in range(0,runs):
-    
-marbles = []
-    
-for i in range(1,N+1):
-    mcolor = randint(1,2)
-    if mcolor == 1:
-        marbles.append('G')
-    else:
-        marbles.append('R')
-
-print(marbles)
 
 for i in range(0,runs):
     
+    marbles = []
     result = ''
     
     for i in range(1,N+1):
@@ -105,10 +95,6 @@ for i in range(0,runs):
             del marbles[Emarble]
             
     EtotalRuns += 1"""
-    
-
-print(marbles)
-
 
 #EPw = EtotalWins/EtotalRuns
 
