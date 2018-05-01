@@ -5,7 +5,7 @@
 from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 20
+runs = 1000
 
 #EXPERIMENTAL
 
@@ -46,17 +46,10 @@ for i in range(0,runs):
     result += str(marbles[Emarble4])
     N -= 1
     del marbles[Emarble4]
-    
-    print(i)
-    print(result)
 
     if result == 'RRRR' or result == 'RRRG' or result == 'RGRR' or result == 'RGGG' or result == 'GGGG' or result == 'GGGR' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
     EtotalRuns += 1
-
-print()
-print(EtotalWins)
-print(EtotalRuns)
 
 EPw = EtotalWins/EtotalRuns
 
