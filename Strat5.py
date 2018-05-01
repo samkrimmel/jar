@@ -5,18 +5,16 @@
 from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 10
+runs = 10000
 
 #EXPERIMENTAL
 
 EtotalWins = 0
 EtotalRuns = 0
 
-#for i in range(0,runs):
-
 for i in range(0,runs):
+    
     N = 10 #int(input('Number of marbles, between 8 and 20: '))
-    print(i)
     
     marbles = []
     
@@ -48,54 +46,12 @@ for i in range(0,runs):
     result += str(marbles[Emarble4])
     N -= 1
     del marbles[Emarble4]
+    
+    print(i)
 
     if result == 'RRRR' or result == 'RRRG' or result == 'RGRR' or result == 'RGGG' or result == 'GGGG' or result == 'GGGR' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
     EtotalRuns += 1
-    
-    
-    
-    
-    
-    """if marbles[Emarble] == 'R': # 1st RED
-        N -= 1
-        del marbles[Emarble]
-        Emarble2 = randint(0,N-1)
-        if marbles[Emarble2] == 'R': #2nd RED
-            N -= 1
-            del marbles[Emarble2]
-            Emarble3 = randint(0,N-1)
-            if marbles[Emarble3] == 'R': #3rd RED
-                EtotalWins += 1
-        else: # 2nd GREEN
-            N -= 1
-            del marbles[Emarble2]
-            Emarble3 = randint(0,N-1)
-            if marbles[Emarble3] == 'G': #3rd GREEN
-                N -= 1
-                del marbles[Emarble3]
-                
-    else: #1st GREEN
-        N -= 1
-        del marbles[Emarble]
-        Emarble2 = randint(0,N-1)
-        if marbles[Emarble2] == 'R': #RED
-            N -= 1
-            del marbles[Emarble2]
-            Emarble3 = randint(0,N-1)
-            if marbles[Emarble3] == 'R': #RED
-                EtotalWins += 1
-            else: #GREEN
-                N -= 1
-                del marbles[Emarble3]
-                Emarble4 = randint(0,N-1)
-                if marbles[Emarble4] == 'G':
-                    EtotalWins += 1
-        else: #GREEN
-            N -= 1
-            del marbles[Emarble]
-            
-    EtotalRuns += 1"""
 
 EPw = EtotalWins/EtotalRuns
 
