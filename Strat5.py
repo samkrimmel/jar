@@ -13,7 +13,18 @@ runs = 10000
 EtotalWins = 0
 EtotalRuns = 0
 
+def picked(color):
+    N -= 1
+    if color <= ERed:
+        ERed -= 1
+    
+
 for i in range(0,runs):
+    
+    marbles = []
+    
+    for i in range(1,N):
+        mcolor = 
     
     ERed = randint(0,N)
     EGreen = N-ERed
