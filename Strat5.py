@@ -61,6 +61,7 @@ for i in range(0,runs):
 
     print()
     print(marbles)
+    print(result)
     
     if result == 'RRRR' or result == 'RRRG' or result == 'RGRR' or result == 'RGGG' or result == 'GGGG' or result == 'GGGR' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
