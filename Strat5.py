@@ -17,6 +17,8 @@ EtotalRuns = 0
 
 for i in range(0,runs):
     
+    print(i)
+    
     marbles = []
     
     result = ''
