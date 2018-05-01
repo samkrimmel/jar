@@ -38,7 +38,7 @@ print(randommarble)
 
 print(marbles)
     
-EMarble = randint(1,N)
+EMarble = randint(1,N-1)
 
 #EPw = EtotalWins/EtotalRuns
 
