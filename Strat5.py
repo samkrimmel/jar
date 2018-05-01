@@ -8,6 +8,15 @@ N = 10 #int(input('Number of marbles, between 8 and 20: '))
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 runs = 10
 
+def relist():
+    for i in range(1,N+1):
+        marbles = []
+        mcolor = randint(1,2)
+        if mcolor == 1:
+            marbles.append('G')
+        else:
+            marbles.append('R')
+
 #EXPERIMENTAL
 
 EtotalWins = 0
@@ -17,15 +26,9 @@ EtotalRuns = 0
 
 for i in range(0,runs):
     
-    result = ''
+    relist()
     
-    for i in range(1,N+1):
-        marbles = []
-        mcolor = randint(1,2)
-        if mcolor == 1:
-            marbles.append('G')
-        else:
-            marbles.append('R')
+    result = ''
 
     Emarble = randint(0,N-1)
     result += str(marbles[Emarble])
