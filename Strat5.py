@@ -18,22 +18,13 @@ for i in range(0,runs):
     ERed = randint(0,N)
     EGreen = N-ERed
     
-    EPr = ERed/N
-    EPg = EGreen/N
-    
-    EPr_1 = (ERed-1)/(N-1)
-    EPg_1 = (EGreen-1)/(N-1)
-    
-    EPr_2 = (ERed-2)/(N-2)
-    EPg_2 = (EGreen-2)/(N-2)
-    
     EMarble = randint(1,N)
     EMarble2 = randint(1,N)
     EMarble3 = randint(1,N)
     
-    if (EMarble <= ERed and EMarble2 <= ERed and EMarble3 <= ERed) or (EMarble > ERed and EMarble2 > ERed and EMarble3 > ERed):
+    if (EMarble <= ERed and EMarble2 <= ERed-1 and EMarble3 <= ERed-2) or (EMarble > ERed and EMarble2 > ERed+1 and EMarble3 > ERed+2):
         EtotalWins += 1
-    elif (EMarble <= ERed and EMarble2 > ERed and EMarble3 <= ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 <= ERed):
+    elif (EMarble <= ERed and EMarble2 > ERed+1 and EMarble3 <= ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 <= ERed):
         EMarble4 = randint(1,N)
         if EMarble4 <= ERed:
             EtotalWins += 1
@@ -59,6 +50,12 @@ for i in range(0,N+1):
     
     TPr = TRed/N
     TPg = TGreen/N
+    
+    EPr_1 = (ERed-1)/(N-1)
+    EPg_1 = (EGreen-1)/(N-1)
+    
+    EPr_2 = (ERed-2)/(N-2)
+    EPg_2 = (EGreen-2)/(N-2)
     
     Ttotal += W*TPr
     
