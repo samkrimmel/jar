@@ -15,7 +15,7 @@ EtotalRuns = 0
 
 def picked(color):
     N -= 1
-    if color == 'R'
+    if color == 'R':
         ERed -= 1
     else:
         EGreen -= 1
