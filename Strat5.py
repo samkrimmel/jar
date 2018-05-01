@@ -30,13 +30,14 @@ for i in range(0,runs):
     Emarble = randint(0,N-1)
     result += str(marbles[Emarble])
     N -= 1
+    print(N)
     del marbles[Emarble]
     
-    if len(result) == 1:
-        Emarble2 = randint(0,N-1)
-        result += str(marbles[Emarble2])
-        N -= 1
-        del marbles[Emarble2]
+    Emarble2 = randint(0,N-1)
+    result += str(marbles[Emarble2])
+    N -= 1
+    print(N)
+    del marbles[Emarble2]
 
     Emarble3 = randint(0,N-1)
     result += str(marbles[Emarble3])
