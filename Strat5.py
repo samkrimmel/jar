@@ -5,7 +5,7 @@
 from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 5
+runs = 20
 
 #EXPERIMENTAL
 
