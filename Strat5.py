@@ -37,7 +37,7 @@ def picked(color):
     
     EMarble = randint(1,N)
 
-EPw = EtotalWins/EtotalRuns
+#EPw = EtotalWins/EtotalRuns
 
 print("Experimental Probability:", EPw)
 
