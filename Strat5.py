@@ -54,6 +54,7 @@ for i in range(0,runs):
         EtotalWins += 1
     EtotalRuns += 1
 
+print()
 print(EtotalWins)
 print(EtotalRuns)
 
