@@ -32,6 +32,10 @@ for i in range(1,N+1):
     else:
         marbles.append('R')
 
+randommarble = randint(0,N)
+
+print(randommarble)
+
 print(marbles)
     
 EMarble = randint(1,N)
