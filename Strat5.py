@@ -34,6 +34,11 @@ for i in range(1,N+1):
 
 Emarble = randint(0,N-1)
 
+if marbles[Emarble] == 'R'
+    picked(R)
+else:
+    picked(G)
+
 print(Emarble)
 
 print(marbles)
