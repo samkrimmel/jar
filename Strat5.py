@@ -96,9 +96,9 @@ for i in range(0,runs):
             
     EtotalRuns += 1"""
 
-#EPw = EtotalWins/EtotalRuns
+EPw = EtotalWins/EtotalRuns
 
-#print("Experimental Probability:", EPw)
+print("Experimental Probability:", EPw)
 
 #THEORETICAL
 
