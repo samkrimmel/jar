@@ -23,7 +23,7 @@ def picked(color):
     
 marbles = []
     
-for i in range(1,N):
+for i in range(1,N+1):
     mcolor = randint(1,2)
     if mcolor == 1:
         marbles.append('G')
