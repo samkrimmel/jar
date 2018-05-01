@@ -31,7 +31,7 @@ for i in range(1,N+1):
         marbles.append('G')
     else:
         marbles.append('R')
-    
+
 print(marbles)
     
 EMarble = randint(1,N)
