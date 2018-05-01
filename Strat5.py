@@ -32,13 +32,12 @@ for i in range(1,N+1):
     else:
         marbles.append('R')
 
-randommarble = randint(0,N)
+Emarble = randint(0,N-1)
 
-print(randommarble)
+print(Emarble)
 
 print(marbles)
-    
-EMarble = randint(1,N-1)
+
 
 #EPw = EtotalWins/EtotalRuns
 
