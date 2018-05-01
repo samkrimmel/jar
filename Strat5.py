@@ -21,21 +21,21 @@ def picked(color):
 
 #for i in range(0,runs):
     
-    marbles = []
+marbles = []
     
-    for i in range(1,N):
-        mcolor = randint(1,2)
-        if mcolor == 1:
-            marbles.append('G')
-        else:
-            marbles.append('R')
+for i in range(1,N):
+    mcolor = randint(1,2)
+    if mcolor == 1:
+        marbles.append('G')
+    else:
+        marbles.append('R')
     
-    print(marbles)
+print(marbles)
     
-    ERed = randint(0,N)
-    EGreen = N-ERed
+ERed = randint(0,N)
+EGreen = N-ERed
     
-    EMarble = randint(1,N)
+EMarble = randint(1,N)
 
 #EPw = EtotalWins/EtotalRuns
 
