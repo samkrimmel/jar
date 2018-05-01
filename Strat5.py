@@ -54,11 +54,6 @@ for i in range(0,N+1):
     TPr = TRed/N
     TPg = TGreen/N
     
-    EPr_1 = (ERed-1)/(N-1)
-    EPg_1 = (EGreen-1)/(N-1)
-    
-    EPr_2 = (ERed-2)/(N-2)
-    EPg_2 = (EGreen-2)/(N-2)
     
     Ttotal += W*TPr
     
