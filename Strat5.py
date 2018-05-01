@@ -24,28 +24,18 @@ for i in range(0,runs):
     marbles = []
     
     for i in range(1,N):
-        mcolor = 
+        mcolor = randint(1,2)
+        if mcolor == 1:
+            marbles.append('G')
+        else:
+            marbles.append('R')
+    
+    print(marbles)
     
     ERed = randint(0,N)
     EGreen = N-ERed
     
     EMarble = randint(1,N)
-    
-    if EMarble <= ERed:
-        ERed -= 1
-        EMarble2 = randint(1,(N-1))
-    
-    if (EMarble <= ERed and EMarble2 <= ERed and EMarble3 <= ERed) or (EMarble > ERed and EMarble2 > ERed+1 and EMarble3 > ERed+2):
-        EtotalWins += 1
-    elif (EMarble <= ERed and EMarble2 > ERed+1 and EMarble3 <= ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 <= ERed):
-        EMarble4 = randint(1,N)
-        if EMarble4 <= ERed:
-            EtotalWins += 1
-    elif (EMarble <= ERed and EMarble2 > ERed and EMarble3 > ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 > ERed):
-        EMarble4 = randint(1,N)
-        if EMarble4 > ERed:
-            EtotalWins += 1
-    EtotalRuns += 1
 
 EPw = EtotalWins/EtotalRuns
 
