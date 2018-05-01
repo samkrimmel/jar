@@ -19,10 +19,12 @@ for i in range(0,runs):
     EGreen = N-ERed
     
     EMarble = randint(1,N)
-    EMarble2 = randint(1,N)
-    EMarble3 = randint(1,N)
     
-    if (EMarble <= ERed and EMarble2 <= ERed-1 and EMarble3 <= ERed-2) or (EMarble > ERed and EMarble2 > ERed+1 and EMarble3 > ERed+2):
+    if EMarble <= ERed:
+        ERed -= 1
+        EMarble2 = randint(1,(N-1))
+    
+    if (EMarble <= ERed and EMarble2 <= ERed and EMarble3 <= ERed) or (EMarble > ERed and EMarble2 > ERed+1 and EMarble3 > ERed+2):
         EtotalWins += 1
     elif (EMarble <= ERed and EMarble2 > ERed+1 and EMarble3 <= ERed) or (EMarble > ERed and EMarble2 <= ERed and EMarble3 <= ERed):
         EMarble4 = randint(1,N)
