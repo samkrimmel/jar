@@ -54,6 +54,9 @@ for i in range(0,runs):
         EtotalWins += 1
     EtotalRuns += 1
 
+print(EtotalWins)
+print(EtotalRuns)
+
 EPw = EtotalWins/EtotalRuns
 
 print("Experimental Probability:", EPw)
