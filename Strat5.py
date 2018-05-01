@@ -32,10 +32,11 @@ for i in range(0,runs):
     N -= 1
     del marbles[Emarble]
     
-    Emarble2 = randint(0,N-1)
-    result += str(marbles[Emarble2])
-    N -= 1
-    del marbles[Emarble2]
+    if len(result) == 1:
+        Emarble2 = randint(0,N-1)
+        result += str(marbles[Emarble2])
+        N -= 1
+        del marbles[Emarble2]
 
     Emarble3 = randint(0,N-1)
     result += str(marbles[Emarble3])
@@ -46,8 +47,6 @@ for i in range(0,runs):
     result += str(marbles[Emarble4])
     N -= 1
     del marbles[Emarble4]
-
-    print(i)
 
     if result == 'RRRR' or result == 'RRRG' or result == 'RGRR' or result == 'RGGG' or result == 'GGGG' or result == 'GGGR' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
@@ -69,7 +68,6 @@ for i in range(0,N+1):
     
     TPr = TRed/N
     TPg = TGreen/N
-    
     
     Ttotal += W*TPr
     
