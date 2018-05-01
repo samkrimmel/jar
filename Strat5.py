@@ -6,7 +6,7 @@ from random import randint
 
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 10000
+runs = 10
 
 #EXPERIMENTAL
 
@@ -19,7 +19,7 @@ def picked(color):
         ERed -= 1
     
 
-for i in range(0,runs):
+#for i in range(0,runs):
     
     marbles = []
     
