@@ -39,7 +39,7 @@ def picked(color):
 
 #EPw = EtotalWins/EtotalRuns
 
-print("Experimental Probability:", EPw)
+#print("Experimental Probability:", EPw)
 
 #THEORETICAL
 
