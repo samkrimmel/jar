@@ -17,10 +17,10 @@ EtotalRuns = 0
 
 for i in range(0,runs):
     
-    marbles = []
     result = ''
     
     for i in range(1,N+1):
+        marbles = []
         mcolor = randint(1,2)
         if mcolor == 1:
             marbles.append('G')
@@ -47,8 +47,6 @@ for i in range(0,runs):
         result += str(marbles[Emarble4])
         N -= 1
         del marbles[Emarble4]
-        
-        marbles = []
     
     if result == 'RRRR' or result == 'RRRG' or result == 'RGRR' or result == 'RGGG' or result == 'GGGG' or result == 'GGGR' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
