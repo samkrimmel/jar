@@ -15,8 +15,10 @@ EtotalRuns = 0
 
 def picked(color):
     N -= 1
-    if color <= ERed:
+    if color == 'R'
         ERed -= 1
+    else:
+        EGreen -= 1
     
 
 #for i in range(0,runs):
@@ -31,9 +33,6 @@ for i in range(1,N+1):
         marbles.append('R')
     
 print(marbles)
-    
-ERed = randint(0,N)
-EGreen = N-ERed
     
 EMarble = randint(1,N)
 
