@@ -21,6 +21,8 @@ for i in range(0,runs):
     EPr = ERed/N
     EPg = EGreen/N
     
+    Etotal += W*EPr
+    
     EMarble = randint(1,N)
     EMarble2 = randint(1,N)
     
@@ -28,9 +30,13 @@ for i in range(0,runs):
         EtotalWins += 1
     EtotalRuns += 1
 
+EDavg = Etotal/runs
+
 EPw = EtotalWins/EtotalRuns
 
-print("Experimental Probability:", EPw)
+EP = (EPw*W)-EDavg
+
+print("Experimental P: ",EP)
 
 #THEORETICAL
 
@@ -53,9 +59,7 @@ TDavg = Ttotal/(N+1)
 
 TPw = TtotalProb/(N+1)
 
-print("Theoretical Probability:", TPw)
+TP = (TPw*W)-TDavg
 
-P = (TPw*W)-TDavg
-
-print("P: ",P)
+print("Theoretical P: ",TP)
     
