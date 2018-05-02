@@ -27,6 +27,8 @@ for i in range(0,runs):
         else:
             marbles.append('R')
     
+    EPr = marbles.count('R')/len(marbles)
+    
     marbles2 = list(marbles)
     
     Emarble = randint(0,N-1)
