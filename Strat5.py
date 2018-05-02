@@ -43,7 +43,6 @@ for i in range(0,runs):
     
     if result == 'RR' or result == 'GG':
         N += 2
-        print(N)
         Emarble3 = randint(0,N-1)
         result += str(marbles[Emarble3])
     else:
@@ -53,7 +52,6 @@ for i in range(0,runs):
         del marbles2[Emarble3]
         
         N += 3
-        print(N)
         Emarble4 = randint(0,N-1)
         result += str(marbles[Emarble4])
 
