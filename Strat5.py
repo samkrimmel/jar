@@ -42,12 +42,14 @@ for i in range(0,runs):
     N -= 1
     del marbles2[Emarble]
     print(marbles2)
-    print(marbles)
+    print()
     
     Emarble2 = randint(0,N-1)
     result += str(marbles[Emarble2])
+    print(result)
     N -= 1
     del marbles2[Emarble2]
+    print(marbles2)
     
     if result == 'RR' or result == 'GG':
         N += 2
