@@ -6,7 +6,7 @@ from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 10 #int(input('Experimental runs: '))
+runs = 1000 #int(input('Experimental runs: '))
 
 #EXPERIMENTAL
 
@@ -27,34 +27,34 @@ for i in range(0,runs):
         else:
             marbles.append('R')
     
-    print(marbles)
-    
     EPr = marbles.count('R')/len(marbles)
     
     marbles2 = list(marbles)
     
     Emarble = randint(0,N-1)
     result += str(marbles[Emarble])
-    N -= 1
-    del marbles2[Emarble]
+    #N -= 1
+    #del marbles2[Emarble]
     
     Emarble2 = randint(0,N-1)
+    while Emarble == Emarble2:
+        Emarble2 = randint(0,N-1)
     result += str(marbles[Emarble2])
-    N -= 1
-    del marbles2[Emarble2]
+    #N -= 1
+    #del marbles2[Emarble2]
     
     if result == 'RR' or result == 'GG':
-        N += 2
         Emarble3 = randint(0,N-1)
         result += str(marbles[Emarble3])
         
     else:
         Emarble3 = randint(0,N-1)
+        while Emarble3 == Emarble2 or Emarble3 == Emarble:
+            Emarble3 = randint(0,N-1)
         result += str(marbles2[Emarble3])
-        N -= 1
-        del marbles2[Emarble3]
+        #N -= 1
+        #del marbles2[Emarble3]
         
-        N += 3
         Emarble4 = randint(0,N-1)
         result += str(marbles[Emarble4])
 
