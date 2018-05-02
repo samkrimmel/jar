@@ -33,7 +33,6 @@ for i in range(0,runs):
     
     print()
     print(marbles)
-    print(marbles2)
     print()
     
     Emarble = randint(0,N-1)
@@ -50,20 +49,27 @@ for i in range(0,runs):
     N -= 1
     del marbles2[Emarble2]
     print(marbles2)
+    print()
     
     if result == 'RR' or result == 'GG':
         N += 2
+        print(N)
         Emarble3 = randint(0,N-1)
         result += str(marbles[Emarble3])
+        print(result)
     else:
         Emarble3 = randint(0,N-1)
         result += str(marbles2[Emarble3])
+        print(result)
         N -= 1
         del marbles2[Emarble3]
+        print(marbles)
+        print()
         
         N += 3
         Emarble4 = randint(0,N-1)
         result += str(marbles[Emarble4])
+        print(result)
 
     if result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
