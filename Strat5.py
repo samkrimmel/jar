@@ -6,7 +6,7 @@ from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 10000
+runs = 1000
 
 #EXPERIMENTAL
 
