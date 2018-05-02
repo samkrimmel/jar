@@ -46,7 +46,6 @@ for i in range(0,runs):
         Emarble3 = randint(0,N-1)
         result += str(marbles[Emarble3])
     else:
-        print(N)
         Emarble3 = randint(0,N-1)
         result += str(marbles2[Emarble3])
         N -= 1
