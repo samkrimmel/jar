@@ -104,7 +104,7 @@ for i in range(0,N+1):
     
     TtotalProb += (TPr*TPr_r*TPr)+(TPg*TPg_g*TPg)+(TPr*TPg_r*TPg_rg*TPg)+(TPg*TPr_g*TPr_rg*TPr)+(TPg*TPr_g*TPg_rg*TPg)+(TPr*TPg_r*TPr_rg*TPr)
 
-TDavg = Ttotal/(N)
+TDavg = Ttotal/(N+1)
 
 TPw = TtotalProb/(N+1)
 
