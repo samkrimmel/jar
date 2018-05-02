@@ -73,13 +73,12 @@ for i in range(0,runs):
 
     if result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
-    EtotalRuns += 1
     
     Etotal += W*EPr
     
 EDavg = Etotal/runs
 
-EPw = EtotalWins/EtotalRuns
+EPw = EtotalWins/runs
 
 ES = (EPw*W)-EDavg
 
