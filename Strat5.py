@@ -59,7 +59,9 @@ for i in range(0,runs):
     if result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
         print(result)
-    EtotalRuns += 1
+    else:
+        print('LOSS:',result)
+        EtotalRuns += 1
     
     Etotal += W*EPr
     
