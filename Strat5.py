@@ -6,7 +6,7 @@ from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 100 #int(input('Experimental runs: '))
+runs = 10 #int(input('Experimental runs: '))
 
 #EXPERIMENTAL
 
@@ -26,6 +26,8 @@ for i in range(0,runs):
             marbles.append('G')
         else:
             marbles.append('R')
+    
+    print(marbles)
     
     EPr = marbles.count('R')/len(marbles)
     
@@ -58,10 +60,7 @@ for i in range(0,runs):
 
     if result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
-        print(result)
-    else:
-        print('LOSS:',result)
-        EtotalRuns += 1
+    EtotalRuns += 1
     
     Etotal += W*EPr
     
