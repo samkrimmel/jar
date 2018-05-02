@@ -6,7 +6,7 @@ from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 1000 #int(input('Experimental runs: '))
+runs = 100 #int(input('Experimental runs: '))
 
 #EXPERIMENTAL
 
@@ -46,6 +46,7 @@ for i in range(0,runs):
         Emarble3 = randint(0,N-1)
         result += str(marbles[Emarble3])
     else:
+        print(N)
         Emarble3 = randint(0,N-1)
         result += str(marbles2[Emarble3])
         N -= 1
