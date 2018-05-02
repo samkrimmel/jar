@@ -6,7 +6,7 @@ from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 1 #int(input('Experimental runs: '))
+runs = 2 #int(input('Experimental runs: '))
 
 #EXPERIMENTAL
 
@@ -31,54 +31,42 @@ for i in range(0,runs):
     
     marbles2 = list(marbles)
     
-    print()
-    print(marbles)
-    print()
-    
     Emarble = randint(0,N-1)
     result += str(marbles[Emarble])
-    print(result)
     N -= 1
     del marbles2[Emarble]
-    print(marbles2)
-    print()
     
     Emarble2 = randint(0,N-1)
     result += str(marbles[Emarble2])
-    print(result)
     N -= 1
     del marbles2[Emarble2]
-    print(marbles2)
-    print()
     
     if result == 'RR' or result == 'GG':
         N += 2
-        print(N)
         Emarble3 = randint(0,N-1)
         result += str(marbles[Emarble3])
-        print(result)
+        
     else:
         Emarble3 = randint(0,N-1)
         result += str(marbles2[Emarble3])
-        print(result)
         N -= 1
         del marbles2[Emarble3]
-        print(marbles)
-        print()
         
         N += 3
         Emarble4 = randint(0,N-1)
         result += str(marbles[Emarble4])
-        print(result)
 
     if result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
+    EtotalRuns += 1
     
     Etotal += W*EPr
     
 EDavg = Etotal/runs
 
-EPw = EtotalWins/runs
+print(EtotalWins)
+print(EtotalRuns)
+EPw = EtotalWins/EtotalRuns
 
 ES = (EPw*W)-EDavg
 
