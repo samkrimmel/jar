@@ -68,18 +68,34 @@ for i in range(0,N+1):
     TPr = TRed/N
     TPg = TGreen/N
     
-    TPr_1 = (TRed-1)/(N-1)
-    TPg_1 = (TGreen-1)/(N-1)
+    TPr_r = (TRed-1)/(N-1)
+    if TPr_r < 0:
+        TP_r = 0
     
-    TPr_2 = (TRed-2)/(N-2)
-    TPg_2 = (TGreen-2)/(N-2)
+    TPg_g = (TGreen-1)/(N-1)
+    if TPg_g < 0:
+        TPg_g = 0
     
-    TPr_3 = (TRed-3)/(N-3)
-    TPg_3 = (TGreen-3)/(N-3)
+    TPr_g = (TRed)/(N-1)
+    if TPr_g < 0:
+        TPr_g = 0
+    
+    TPg_r = (TGreen)/(N-1)
+    if TPg_r < 0:
+        TPg_r = 0
+        
+    TPr_rg = (TRed-1)/(N-2)
+    if TPr_rg < 0:
+        TPr_rg = 0
+    
+    TPg_rg = (TGreen-1)/(N-2)
+    if TPg_rg < 0:
+        TPg_rg = 0
+    
     
     Ttotal += W*TPr
     
-    TtotalProb += (TPr*TPr_1*TPr_2)+(TPg*TPg_1*TPg_2)+(2*(TPg_3*(TPr*TPr_1*TPr_2)))+(2*(TPr_3*(TPg*TPg_1*TPg_2)))
+    TtotalProb += (TPr*TPr_r*TPr)+(TPg*TPg_g*TPg)+(2*(TPg_3*(TPr*TPr_1*TPr_2)))+(2*(TPr_3*(TPg*TPg_1*TPg_2)))
 
 TDavg = Ttotal/(N+1)
 
