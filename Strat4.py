@@ -40,7 +40,7 @@ for i in range(0,runs):
             EtotalWins += 1
     EtotalRuns += 1
 
-EDavg = Etotal/(N+1)
+EDavg = Etotal/(runs)
 
 EPw = EtotalWins/EtotalRuns
 
