@@ -65,9 +65,9 @@ EDavg = Etotal/runs
 
 EPw = EtotalWins/EtotalRuns
 
-ER = (EPw*W)-EDavg
+ES = (EPw*W)-EDavg
 
-print("Experimental R: ",ER)
+print("Experimental S: ",ES)
 
 print("Experimental Probability:", EPw)
 
@@ -119,6 +119,6 @@ TPw = TtotalProb/(N+1)
 
 print("Theoretical Probability:", TPw)
 
-TR = (TPw*W)-TDavg
+TS = (TPw*W)-TDavg
 
-print("Theoretical R: ",TR)
+print("Theoretical S: ",TS)
