@@ -6,7 +6,7 @@ from random import randint
 
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-runs = 1000000
+runs = 10000
 
 #EXPERIMENTAL
 
@@ -39,7 +39,11 @@ for i in range(0,runs):
 
 EPw = EtotalWins/EtotalRuns
 
+ER = (EPw*W)-
+
 print("Experimental Probability:", EPw)
+
+print("Experimental R: ", ER)
 
 #THEORETICAL
 
@@ -64,6 +68,6 @@ TPw = TtotalProb/(N+1)
 
 print("Theoretical Probability:", TPw)
 
-R = (TPw*W)-TDavg
+TR = (TPw*W)-TDavg
 
-print("R: ",R)
+print("Theoretical R: ",TR)
