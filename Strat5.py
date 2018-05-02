@@ -26,26 +26,32 @@ for i in range(0,runs):
             marbles.append('G')
         else:
             marbles.append('R')
-
-    Emarble = randint(0,N-1)
-    result += str(marbles[Emarble])
-    N -= 1
-    del marbles[Emarble]
     
-    Emarble2 = randint(0,N-1)
+    N2 = N
+    
+    marbles2 = list(marbles)
+    
+    Emarble = randint(0,N2-1)
+    result += str(marbles[Emarble])
+    N2 -= 1
+    del marbles2[Emarble]
+    
+    Emarble2 = randint(0,N2-1)
     result += str(marbles[Emarble2])
-    N -= 1
-    del marbles[Emarble2]
-
-    Emarble3 = randint(0,N-1)
-    result += str(marbles[Emarble3])
-    N -= 1
-    del marbles[Emarble3]
-
-    Emarble4 = randint(0,N-1)
-    result += str(marbles[Emarble4])
-    N -= 1
-    del marbles[Emarble4]
+    N2 -= 1
+    del marbles2[Emarble2]
+    
+    if result == 'RR' or result == 'GG':
+        Emarble3 = randint(0,N-1)
+        result += str(marbles[Emarble3])
+    else:
+        Emarble3 = randint(0,N2-1)
+        result += str(marbles2[Emarble3])
+        N2 -= 1
+        del marbles2[Emarble3]
+    
+        Emarble4 = randint(0,N-1)
+        result += str(marbles[Emarble4])
 
     if result == 'RRRR' or result == 'RRRG' or result == 'RGRR' or result == 'RGGG' or result == 'GGGG' or result == 'GGGR' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
