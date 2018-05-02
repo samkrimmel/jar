@@ -79,7 +79,7 @@ for i in range(0,N+1):
     
     Ttotal += W*TPr
     
-    TtotalProb += (TPr**3)+(TPg**3)+(2*(TPg*(TPr**3)))+(2*(TPr*(TPg**3)))
+    TtotalProb += (TPr*TPr_1*TPr_2)+(TPg*TPg_1*TPg_2)+(2*(TPg_3*(TPr*TPr_1*TPr_2)))+(2*(TPr_3*(TPg*TPg_1*TPg_2)))
 
 TDavg = Ttotal/(N+1)
 
