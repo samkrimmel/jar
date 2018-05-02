@@ -68,6 +68,15 @@ for i in range(0,N+1):
     TPr = TRed/N
     TPg = TGreen/N
     
+    TPr_1 = (TRed-1)/(N-1)
+    TPg_1 = (TGreen-1)/(N-1)
+    
+    TPr_2 = (TRed-2)/(N-2)
+    TPg_2 = (TGreen-2)/(N-2)
+    
+    TPr_3 = (TRed-3)/(N-3)
+    TPg_3 = (TGreen-3)/(N-3)
+    
     Ttotal += W*TPr
     
     TtotalProb += (TPr**3)+(TPg**3)+(2*(TPg*(TPr**3)))+(2*(TPr*(TPg**3)))
