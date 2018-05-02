@@ -103,6 +103,6 @@ TPw = TtotalProb/(N+1)
 
 print("Theoretical Probability:", TPw)
 
-R = (TPw*W)-TDavg
+TR = (TPw*W)-TDavg
 
-print("R: ",R)
+print("Theoretical R: ",R)
