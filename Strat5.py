@@ -15,8 +15,6 @@ EtotalRuns = 0
 
 for i in range(0,runs):
     
-    N = 10 #int(input('Number of marbles, between 8 and 20: '))
-    
     marbles = []
     
     result = ''
@@ -57,8 +55,16 @@ for i in range(0,runs):
     if result == 'RRR' or result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
     EtotalRuns += 1
+    
+    Etotal += W*EPr
+    
+EDavg = Etotal/(N+1)
 
 EPw = EtotalWins/EtotalRuns
+
+ER = (EPw*W)-EDavg
+
+print("Experimental R: ",ER)
 
 print("Experimental Probability:", EPw)
 
