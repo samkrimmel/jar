@@ -6,7 +6,7 @@ from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 1000
+runs = 10
 
 #EXPERIMENTAL
 
@@ -28,6 +28,8 @@ for i in range(0,runs):
             marbles.append('R')
     
     EPr = marbles.count('R')/len(marbles)
+    
+    print(EPr)
     
     marbles2 = list(marbles)
     
@@ -61,7 +63,7 @@ for i in range(0,runs):
     
     Etotal += W*EPr
     
-EDavg = Etotal/(N+1)
+EDavg = Etotal/runs
 
 EPw = EtotalWins/EtotalRuns
 
