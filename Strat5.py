@@ -55,7 +55,7 @@ for i in range(0,runs):
         Emarble4 = randint(0,N-1)
         result += str(marbles[Emarble4])
 
-    if result == 'RRR' or result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
+    if result == 'RRR' or result == 'RGRR' or result == 'RGGG' or result == 'GGG' or result == 'GRRR' or result == 'GRGG':
         EtotalWins += 1
     EtotalRuns += 1
     
