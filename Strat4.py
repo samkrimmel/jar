@@ -21,6 +21,8 @@ for i in range(0,runs):
     EPr = ERed/N
     EPg = EGreen/N
     
+    Etotal += W*EPr
+    
     EMarble = randint(1,N)
     EMarble2 = randint(1,N)
     EMarble3 = randint(1,N)
@@ -37,9 +39,11 @@ for i in range(0,runs):
             EtotalWins += 1
     EtotalRuns += 1
 
+EDavg = Etotal/(N+1)
+
 EPw = EtotalWins/EtotalRuns
 
-ER = (EPw*W)-
+ER = (EPw*W)-EDavg
 
 print("Experimental Probability:", EPw)
 
