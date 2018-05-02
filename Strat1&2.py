@@ -26,7 +26,7 @@ for num in range(0,runs):
     if EPg == 0:
         ED = W
     else:
-        ED = (W*Pr)
+        ED = (W*EPr)
     Etotal += ED
     
 EDavg = Etotal/runs
