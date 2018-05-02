@@ -10,6 +10,7 @@ runs = 10000
 
 #EXPERIMENTAL
 
+Etotal = 0
 EtotalWins = 0
 EtotalRuns = 0
 
