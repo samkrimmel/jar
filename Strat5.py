@@ -95,7 +95,7 @@ for i in range(0,N+1):
     
     Ttotal += W*TPr
     
-    TtotalProb += (TPr*TPr_r*TPr)+(TPg*TPg_g*TPg)+(TPr*TPg_r*TPg_rg*TPg)+(TPg*TPr_g*TPr_rg*TPr)+(
+    TtotalProb += (TPr*TPr_r*TPr)+(TPg*TPg_g*TPg)+(TPr*TPg_r*TPg_rg*TPg)+(TPg*TPr_g*TPr_rg*TPr)+(TPg*TPr_g*TPg_rg*TPg)+(TPr*TPg_r*TPr_rg*TPr)
 
 TDavg = Ttotal/(N+1)
 
