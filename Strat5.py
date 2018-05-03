@@ -23,7 +23,7 @@ for i in range(0,runs):
     ERed = randint(0,N)
     EGreen = N - ERed
     
-    marbles = ['R']*Ered + ['G']*EGreen
+    marbles = ['R']*ERed + ['G']*EGreen
     print(marbles)
     
     EPr = marbles.count('R')/len(marbles)
