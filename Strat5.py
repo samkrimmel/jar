@@ -4,9 +4,9 @@
 
 from random import randint
 
-W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
-N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 1000 #int(input('Experimental runs: '))
+W = int(input('Prize if correct guess, between 3 and 15: '))
+N = int(input('Number of marbles, between 8 and 20: '))
+runs = int(input('Experimental runs: '))
 
 #EXPERIMENTAL
 
@@ -72,8 +72,6 @@ ES = (EPw*W)-EDavg
 
 print("Experimental S: ",ES)
 
-print("Experimental Probability:", EPw)
-
 #THEORETICAL
 
 Ttotal = 0
@@ -119,8 +117,6 @@ for i in range(0,N+1):
 TDavg = Ttotal/(N+1)
 
 TPw = TtotalProb/(N+1)
-
-print("Theoretical Probability:", TPw)
 
 TS = (TPw*W)-TDavg
 
