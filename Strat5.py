@@ -6,7 +6,7 @@ from random import randint
 
 W = 8 #int(input('Prize if correct guess, between 3 and 15: '))
 N = 10 #int(input('Number of marbles, between 8 and 20: '))
-runs = 1000 #int(input('Experimental runs: '))
+runs = 1 #int(input('Experimental runs: '))
 
 #EXPERIMENTAL
 
@@ -20,12 +20,11 @@ for i in range(0,runs):
     
     result = ''
 
-    for n in range(1,N+1):
-        mcolor = randint(1,2)
-        if mcolor == 1:
-            marbles.append('G')
-        else:
-            marbles.append('R')
+    ERed = randint(0,N)
+    EGreen = N - ERed
+    
+    marbles = ['R']*Ered + ['G']*EGreen
+    print(marbles)
     
     EPr = marbles.count('R')/len(marbles)
     
