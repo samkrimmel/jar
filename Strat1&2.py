@@ -46,11 +46,9 @@ for i in range(0,N):
     
     Ttotal += W*TPr
     
-    PwTotal += (TPr**2) + (TPg**2)
 
 TDavg = Ttotal/(N+1)
 
-PwAvg = PwTotal/(N+1)
 
 
 print('Experimental Average Price ($D):',EDavg)
