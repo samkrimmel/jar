@@ -46,10 +46,7 @@ for i in range(0,N):
     
     Ttotal += W*TPr
     
-
 TDavg = Ttotal/(N+1)
-
-
 
 print('Experimental Average Price ($D):',EDavg)
 print('Theoretical Average Price ($D):',TDavg)
