@@ -56,11 +56,3 @@ PwAvg = PwTotal/(N+1)
 print('Experimental Average Price ($D):',EDavg)
 print('Theoretical Average Price ($D):',TDavg)
 
-#STRATEGY 3:
-
-PlAvg = 1 - PwAvg
-
-P = (PwAvg*W)-TDavg
-print(PwAvg)
-print(P)
-
