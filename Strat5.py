@@ -31,15 +31,11 @@ for i in range(0,runs):
     
     Emarble = randint(0,N-1)
     result += str(marbles[Emarble])
-    #N -= 1
-    #del marbles2[Emarble]
-    
+
     Emarble2 = randint(0,N-1)
     while Emarble == Emarble2:
         Emarble2 = randint(0,N-1)
     result += str(marbles[Emarble2])
-    #N -= 1
-    #del marbles2[Emarble2]
     
     if result == 'RR' or result == 'GG':
         Emarble3 = randint(0,N-1)
@@ -50,8 +46,6 @@ for i in range(0,runs):
         while Emarble3 == Emarble2 or Emarble3 == Emarble:
             Emarble3 = randint(0,N-1)
         result += str(marbles2[Emarble3])
-        #N -= 1
-        #del marbles2[Emarble3]
         
         Emarble4 = randint(0,N-1)
         result += str(marbles[Emarble4])
